@@ -17,7 +17,65 @@ body, html {
 }
 
 .demos-header {
-  padding: 35px 0;
+  padding: 20px 0 15px;
+}
+
+.demos-tab {
+  height: auto;
+}
+
+.demos-more-btn {
+  display:block;
+  position:absolute;
+  z-index:600;
+  top: 10px;
+  right: 10px;
+  width:32px;
+  height:32px;
+  overflow: hidden;
+}
+
+.demos-more-btn img {
+  width: 32px;
+  height: 32px;
+  /*border: solid 1px #cccccc;*/
+  border-radius: 2px;
+}
+
+.demos-report-list {
+  min-height: 35px;
+}
+
+.demos-report-list .weui-badge {
+  font-size: 14px;
+  margin: 5px;
+  padding: 8px;
+  background-color: #CCCCCC;
+  color: #333333;
+}
+
+.demos-loadmore {
+  margin: 10px auto 0;
+}
+
+.demos-report-area {
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+h4.demos-title {
+  font-size: 16px;
+}
+
+.demos-report-area table {
+  width: 100%;
+}
+
+.demos-report-area td,.demos-report-area th {
+  padding: 2px;
+  background: #EEEEEE;
+  border: solid 1px #ffffff;
+  text-align: center;
 }
 
 .demos-content-padded {

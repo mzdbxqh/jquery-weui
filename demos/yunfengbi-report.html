@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>jQuery WeUI</title>
+  <% include _head.html %>
+</head>
+
+  <body ontouchstart>
+
+  <div class="demos-more-btn">
+    <a href="yunfengbi-all.html">
+      <img src="images/icon_nav_more.png" alt="">
+    </a>
+  </div>
+
+  <header class='demos-header'>
+    <h1 class="demos-title">xx分类</h1>
+  </header>
+
+  <div class='demos-content-padded'>
+    <div class="weui-loadmore demos-loadmore weui-loadmore_line">
+      <span class="weui-loadmore__tips">报表列表</span>
+    </div>
+    <div class="demos-report-list">
+      <a><span class="weui-badge demos-report-a">销售报表</span></a>
+      <a><span class="weui-badge demos-report-a">财务报表</span></a>
+      <a><span class="weui-badge demos-report-a">预算报表</span></a>
+    </div>
+    <div class="weui-loadmore demos-loadmore weui-loadmore_line weui-loadmore_dot">
+      <span class="weui-loadmore__tips"></span>
+    </div>
+  </div>
+
+  <div class="demos-report-area">
+    <h4 class="demos-title" id="demos-report-title">销售报表</h4>
+    <table>
+      <thead>
+      <tr>
+        <th>标题1</th>
+        <th>标题1</th>
+        <th>标题1</th>
+      </tr>
+      </thead>
+      <tbody>
+        <tr><td>数据1</td><td>数据2</td><td>3</td></tr>
+        <tr><td>数据1</td><td>数据2</td><td>3</td></tr>
+        <tr><td>数据1</td><td>数据2</td><td>3</td></tr>
+        <tr><td>数据1</td><td>数据2</td><td>3</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="weui-footer">
+    <p class="weui-footer__links">
+      <a href="http://jqweui.com" class="weui-footer__link">云峰数据中心 移动报表</a>
+    </p>
+    <p class="weui-footer__text">Copyright © 2018 bi.yunfengholding.com</p>
+  </div>
+
+  <style>
+    .weui-footer {
+      margin: 25px 0 10px 0;
+    }
+  </style>
+
+  <% include _foot.html %>
+
+  <script>
+      var target = $("#demos-report-title");
+      $(".demos-report-a").click(function(e) {
+          target.html($(this).html());
+      });
+  </script>
+
+  </body>
+
+</html>
